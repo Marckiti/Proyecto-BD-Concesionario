@@ -1,14 +1,14 @@
 -- ============================ADMINISTRACIÓN Y SEGURIDAD============================
 -- Creación de usuarios con roles y permisos diferenciados
 -- Usuario Administrador
-CREATE USER 'admin_concesionario'@'localhost';
+CREATE USER 'admin_concesionario'@'localhost' IDENTIFIED BY 'ADMIN_CSN';
 
 GRANT ALL PRIVILEGES 
 ON Concesionario.* 
 TO 'admin_concesionario'@'localhost';
 
 -- Usuario Vendedor
-CREATE USER 'vendedor_concesionario'@'localhost';
+CREATE USER 'vendedor_concesionario'@'localhost' IDENTIFIED BY 'VENDEDOR_CSN';
 
 GRANT SELECT 
 ON Concesionario.Vehiculo 
@@ -23,7 +23,7 @@ ON Concesionario.Venta
 TO 'vendedor_concesionario'@'localhost';
 
 -- Usuario Consulta (Auditor)
-CREATE USER 'consulta_concesionario'@'localhost';
+CREATE USER 'consulta_concesionario'@'localhost' IDENTIFIED BY 'AUDITOR_CSN'; 
 
 GRANT SELECT, INSERT
 ON Concesionario.* 
