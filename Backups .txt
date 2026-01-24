@@ -1,0 +1,21 @@
+Backup completo:
+
+- mysqldump -u root -p Concesionario > backup_completo_concesionario.sql
+
+Restaurar backup completo:
+
+- mysql -u root -p Concesionario < backup_completo_concesionario.sql
+
+======================================================================================
+Backup incremental/logico
+
+- mysqldump -u root -p Concesionario Venta > backup_incremental_venta.sql
+
+- mysqldump -u root -p Concesionario Cliente > backup_incremental_cliente.sql
+
+Restaurar backup incremental/lógico
+
+- mysql -u root -p Concesionario < backup_incremental_venta.sql
+
+- mysql -u root -p Concesionario < backup_incremental_cliente.sql
+
