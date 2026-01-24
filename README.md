@@ -1,2 +1,2 @@
 # Proyecto-BD-Concesionario
-Repositorio de scripts
+La concesionaria “FAST-CAR” actualmente gestiona su inventario y ventas de forma manual o mediante hojas de cálculo dispersas. Esto genera errores en el stock, falta de seguimiento a los clientes y dificultad para calcular las comisiones de los vendedores, por lo que se penso en una solucion que consiste en manejar todos estos registros mediante una base de datos en MySQL.
